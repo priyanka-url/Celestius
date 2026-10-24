@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1c">
+  <title>Celestius — Find Your Orbit</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section id="intro" class="intro" aria-label="Celestius introduction">
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div class="galaxy-band"></div>
+    <div id="starfield" class="starfield" aria-hidden="true"></div>
+
+    <div class="intro-copy">
+      <p class="eyebrow">A UNIVERSE OF POSSIBILITIES</p>
+      <h1>CELESTIUS</h1>
+      <p class="intro-subtitle">Welcome to Celestius</p>
+      <p class="intro-description">Every great journey begins with a spark <span class="star-separator">✦</span></p>
+
+      <button id="enter-star" class="enter-star" type="button" aria-label="Enter Celestius">
+        <span class="star-halo"></span>
+        <span class="star-core">✦</span>
+      </button>
+
+      <p class="enter-hint">FOLLOW THE LIGHT · CLICK THE STAR</p>
+    </div>
+
+    <button class="skip-intro" id="skip-intro" type="button">Skip intro ↗</button>
+    <div id="white-flash" class="white-flash"></div>
+  </section>
+
+  <main id="main-site" class="main-site" inert>
+
+    <nav class="navbar">
+      <a class="brand" href="#home">CELESTIUS <span>✦</span></a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#connect">Connect</a>
+      </div>
+
+      <button id="sound-toggle" class="sound-toggle" type="button" aria-pressed="false">
+        ♫ Sound off
+      </button>
+    </nav>
+
+    <div class="page-shell">
+
+      <section id="home" class="hero-panel reveal">
+        <div class="hero-content">
+          <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+
+          <h2 class="hero-title">
+            Find your place<br>
+            <span>among the stars.</span>
+          </h2>
+
+          <p class="hero-description">
+            Discover experiences, meet curious minds, and make moments worth remembering <span class="star-separator">✦</span>
+          </p>
+
+          <a href="#events" class="star-button">
+            Explore the universe <span>↘</span>
+          </a>
+        </div>
+
+        <div class="hero-art" aria-label="Celestial illustration">
+          <div class="hero-planet planet-one"></div>
+          <div class="hero-planet planet-two"></div>
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+
+          <span class="hero-spark spark-one">✦</span>
+          <span class="hero-spark spark-two">✧</span>
+          <span class="hero-spark spark-three">·</span>
+
+          <div class="hero-art-caption">
+            <span>CELESTIUS</span>
+            <small>EXPLORE WHAT'S POSSIBLE</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="events-panel">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">THE CELESTIUS CALENDAR</p>
+            <h2>Events worth <span>showing up for.</span></h2>
+          </div>
+          <p>Small moments. Big ideas. Find your next adventure <span class="star-separator">✦</span></p>
+        </div>
+
+        <div id="event-list" class="event-list"></div>
+      </section>
+
+      <section id="connect" class="connect-panel reveal">
+        <div class="connect-orb" aria-hidden="true">✦</div>
+
+        <p class="eyebrow">YOUR ORBIT DOESN'T END HERE</p>
+        <h2>Follow us &amp; stay connected</h2>
+
+        <p>
+          Event drops, campus moments, and a little cosmic inspiration — all in one place <span class="star-separator">✦</span>
+        </p>
+
+        <a class="social-link"
+           href="https://www.instagram.com/celestius_cit/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+          <span class="instagram-mark">◎</span>
+
+          <span>
+            <small>FIND US ON INSTAGRAM</small>
+            <strong>@celestius_cit</strong>
+          </span>
+
+          <span class="social-arrow">↗</span>
+        </a>
+      </section>
+
+    </div>
+
+    <footer class="site-footer">
+      <a class="brand" href="#home">CELESTIUS <span>✦</span></a>
+      <p>Made for curious minds and bigger possibilities <span class="star-separator">✦</span></p>
+      <a href="#home" class="back-top">Back to the stars ↑</a>
+    </footer>
+
+  </main>
+
+  <dialog id="event-dialog" class="event-dialog">
+    <button id="close-dialog" class="close-dialog" type="button" aria-label="Close event details">✕</button>
+    <div id="event-detail-content" class="dialog-content"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
